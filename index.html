@@ -2,18 +2,18 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Finanzara | Créditos y Tarjetas</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
+      background-color: #f9f9f9;
       color: #333;
     }
 
     header {
-      background-color: #0033a0;
+      background-color: #002776;
       color: white;
       padding: 1.5rem;
       text-align: center;
@@ -30,10 +30,19 @@
     }
 
     .hero {
-      background: linear-gradient(to right, #0033a0, #0055cc);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to right, #002776, #0072ce);
       color: white;
       padding: 3rem 2rem;
-      text-align: center;
+      gap: 2rem;
+      text-align: left;
+    }
+
+    .hero-text {
+      max-width: 400px;
     }
 
     .hero h2 {
@@ -48,14 +57,12 @@
 
     .hero .buttons {
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
       gap: 1rem;
     }
 
     .btn {
-      background-color: #00b0f0;
-      color: white;
+      background-color: #ffcd00;
+      color: #002776;
       border: none;
       padding: 0.8rem 1.5rem;
       font-size: 1rem;
@@ -65,7 +72,17 @@
     }
 
     .btn:hover {
-      background-color: #0095d9;
+      background-color: #e6b800;
+    }
+
+    .hero-img {
+      max-width: 300px;
+    }
+
+    .hero-img img {
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     }
 
     .features {
@@ -91,11 +108,11 @@
 
     .feature h3 {
       margin-bottom: 0.5rem;
-      color: #0033a0;
+      color: #002776;
     }
 
     .footer {
-      background-color: #0033a0;
+      background-color: #002776;
       color: white;
       text-align: center;
       padding: 1rem;
@@ -107,38 +124,43 @@
 
   <header>
     <h1>FINANZARA</h1>
-    <p>Soluciones que se ajustan a tus metas</p>
+    <p>Tu aliado en créditos y tarjetas</p>
   </header>
 
   <section class="hero">
-    <h2>Solicita tu Crédito o Tarjeta en Minutos</h2>
-    <p>Sin filas, sin papeles. Todo desde tu celular o computador.</p>
-    <div class="buttons">
-      <button class="btn">Solicitar Crédito</button>
-      <button class="btn">Solicitar Tarjeta</button>
+    <div class="hero-text">
+      <h2>Solicita tu Tarjeta o Crédito en Minutos</h2>
+      <p>Fácil, rápido y sin trámites complejos. Con el respaldo de una empresa confiable.</p>
+      <div class="buttons">
+        <button class="btn">Solicitar Crédito</button>
+        <button class="btn">Solicitar Tarjeta</button>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="https://i.imgur.com/OdL0XPt.png" alt="Tarjeta de crédito Finanzara">
     </div>
   </section>
 
   <section class="features">
     <div class="feature">
-      <img src="https://img.icons8.com/ios-filled/100/0033a0/money.png" alt="Crédito Rápido" />
-      <h3>Créditos Rápidos</h3>
-      <p>Aprobación inmediata para lo que necesites hoy.</p>
+      <img src="https://img.icons8.com/ios-filled/100/002776/money.png" alt="Crédito Rápido" />
+      <h3>Créditos en 24h</h3>
+      <p>Solicita desde tu celular y recibe el dinero sin salir de casa.</p>
     </div>
     <div class="feature">
-      <img src="https://img.icons8.com/ios-filled/100/0033a0/credit-card.png" alt="Tarjetas de Crédito" />
-      <h3>Tarjetas Flexibles</h3>
-      <p>Controla tus gastos con límites ajustables.</p>
+      <img src="https://img.icons8.com/ios-filled/100/002776/credit-card.png" alt="Tarjetas de Crédito" />
+      <h3>Tarjetas Inteligentes</h3>
+      <p>Gestiona tus compras con control, alertas y beneficios exclusivos.</p>
     </div>
     <div class="feature">
-      <img src="https://img.icons8.com/ios-filled/100/0033a0/online-support.png" alt="Atención en Línea" />
-      <h3>Soporte 24/7</h3>
-      <p>Estamos siempre para ayudarte en cualquier momento.</p>
+      <img src="https://img.icons8.com/ios-filled/100/002776/customer-support.png" alt="Soporte" />
+      <h3>Atención Personalizada</h3>
+      <p>Te acompañamos en cada paso con asesoría experta.</p>
     </div>
   </section>
 
   <div class="footer">
-    &copy; 2025 Finanzara S.A. Todos los derechos reservados.
+    &copy; 2025 Finanzara S.A. – Inspirados por ti
   </div>
 
 </body>
